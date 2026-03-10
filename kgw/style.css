@@ -108,10 +108,11 @@ footer {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 60px 20px;
     width: 100%;
     display: flex;
     align-items: center;
+    padding-top: 60px 20px;
+    padding-bottom: 60px 20px;
     justify-content: center;
     min-height: 320px;
     position: relative;
@@ -147,4 +148,47 @@ footer {
 .panel h1 {
     margin: 0;
     color: #9A3F3F;
+}
+
+.news-section {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.news-item {
+    background-color: #ffffff;
+    border-left: 5px solid #9A3F3F;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateX(5px);
+}
+
+.news-date {
+    display: inline-block;
+    background-color: #C1856D;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.news-item h3 {
+    margin: 12px 0 15px 0;
+    color: #9A3F3F;
+    font-size: 1.3em;
+}
+
+.news-item p {
+    margin: 0;
+    line-height: 1.7;
+    color: #555;
 }
