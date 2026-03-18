@@ -350,3 +350,144 @@ footer {
     color: #454545;
     line-height: 1.6;
 }
+
+/*Dotacje*/
+.donations-section {
+    background: linear-gradient(135deg, rgba(154, 63, 63, 0.05), rgba(193, 133, 109, 0.08));
+    padding: 60px 20px;
+    margin: 40px 0 0 0;
+}
+
+.donations-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #9A3F3F;
+}
+
+.donations-container h2 {
+    text-align: center;
+    color: #9A3F3F;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.donations-container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.donations-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group textarea {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #9A3F3F;
+    box-shadow: 0 0 0 3px rgba(154, 63, 63, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group.checkbox {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.form-group.checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #9A3F3F;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #7a3030;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(154, 63, 63, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .donations-container {
+        padding: 25px;
+    }
+
+    .donations-container h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group.checkbox {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-group.checkbox input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+}
+

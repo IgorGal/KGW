@@ -69,6 +69,47 @@
             </div>
         </section>
     </main>
+
+    <section class="donations-section">
+        <div class="donations-container">
+            <h2>Wesprzyj Naszą Działalność</h2>
+            <p>Twoja darowizna pomaga nam w organizacji warsztatów, szkoleń i wspieraniu kobiet naszej społeczności.</p>
+            
+            <form class="donations-form">
+                <div class="form-group">
+                    <label for="donor-name">Imię i Nazwisko:</label>
+                    <input type="text" id="donor-name" name="donor-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="donor-email">Adres email:</label>
+                    <input type="email" id="donor-email" name="donor-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="donor-phone">Numer telefonu (opcjonalnie):</label>
+                    <input type="tel" id="donor-phone" name="donor-phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="donation-amount">Kwota darowizny (zł):</label>
+                    <input type="number" id="donation-amount" name="donation-amount" min="1" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="donation-message">Wiadomość (opcjonalnie):</label>
+                    <textarea id="donation-message" name="donation-message" rows="4"></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                    <label for="agree-terms">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Dokonaj Darowizny</button>
+            </form>
+        </div>
+    </section>
     
     <footer>
         <p>&copy; 2026 KGW. Wszelkie prawa zastrzeżone.</p>
